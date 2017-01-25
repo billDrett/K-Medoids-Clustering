@@ -54,11 +54,11 @@ The input date are clustered in k clusters. The k-medoids clustering works like 
 Go to 2 until no better clusters are found</br>
 All initialization, assign and update methods are used and the results of the clusters are writed to the output file as with the silhouette value of each cluster
 <h2/>K-medoids API</h2>
-void KMedoids&lt;T>::run(InitializationType initial, AssignmentType Assign, UpdateType update, int s = 2)</br>
+<b>void KMedoids&lt;T>::run(InitializationType initial, AssignmentType Assign, UpdateType update, int s = 2)</b></br>
 initial is ={InitializationPP,  InitializationConcentrate} </br>
 Assign is ={PamAssign,  LSHAssign}</br>
 update is={Lloyds,Clarans}</br>
-void KMedoids&lt;T>::clara(int s = 5) </br> 
+<b>void KMedoids&lt;T>::clara(int s = 5) </b></br> 
 is the clara algorithm, and s is the number of iterations
 
 
