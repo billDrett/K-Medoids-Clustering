@@ -61,6 +61,7 @@ update is={Lloyds,Clarans}</br>
 <b>void KMedoids&lt;T>::clara(int s = 5) </b></br> 
 is the clara algorithm, and s is the number of iterations
 
+<h2>More information about the algorithms in the <a href="https://github.com/billDrett/K-Medoids-Clustering/tree/master/papers">Papers</a></h2>
 
 
 <h2>Files</h2>
