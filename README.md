@@ -46,6 +46,23 @@ Use make command to compile and make clean to delete object files(there is a Mak
 -ο &lt;output file>: Output file name</br>
 -complete: Output has the members of each cluster</br>
 
+<h2>Functionality</h2>
+The input date are clustered in k clusters. The k-medoids clustering works like this.
+1)Initialize centroids </br>
+2)Assign the rest of the points to the centroids</br>
+3)Update the centroids</br>
+Go to 2 until no better clusters are found</br>
+All initialization, assign and update methods are used and the results of the clusters are writed to the output file as with the silhouette value of each cluster
+<h2/>K-medoids API</h2>
+void KMedoids&lt;T>::run(InitializationType initial, AssignmentType Assign, UpdateType update, int s = 2)</br>
+initial is ={InitializationPP,  InitializationConcentrate} </br>
+Assign is ={PamAssign,  LSHAssign}</br>
+update is={Lloyds,Clarans}</br>
+void KMedoids&lt;T>::clara(int s = 5) </br> 
+is the clara algorithm, and s is the number of iterations
+
+
+
 <h2>Files</h2>
 Format of input file:</br>
 <b>Vector space</b></br>
