@@ -45,3 +45,34 @@ Use make command to compile and make clean to delete object files(there is a Mak
 –c &lt;configuration file>: configuration file name</br>
 -ο &lt;output file>: Output file name</br>
 -complete: Output has the members of each cluster</br>
+
+<h2>Files</h2>
+Format of input file:</br>
+<b>Vector space</b></br>
+@metric_space vector </br>
+@metric {euclidean, cosine} //default: euclidean</br>
+item_id1  x11 x12 ... x1d</br>
+item_id2</br>
+.</br>
+.</br>
+item_idN  xN1 xN2 ... xNd</br></br>
+<b>Hamming</b></br>
+@metric_space hamming</br>
+item_id1  B1</br>
+....</br>
+item_idN</br></br>
+<b>Distance Matrix</b></br>
+@metric_space matrix </br>
+item_id1  x11 x12 ... x1d</br>
+item_id2</br>
+.</br>
+.</br>
+item_idQ  xQ1 xQ2 ... xQd</br></br>
+<b>Configuration file</b></br>
+number_of_clusters: int // k value</br>
+number_of_hash_functions: int //default 4</br>
+number_of_hash_tables: int //default 5</br>
+clarans_set_fraction: int //default max{0.12*k(N-k),250}, k is the number of clusters and N the number of the datapoints </br>
+clarans_iterations: int //default 2</br>
+
+
