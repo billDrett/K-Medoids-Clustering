@@ -33,7 +33,7 @@ Silhouette value is used to see the quality of the clusters.
 <li/>Hamming Metric Space</li>
 <li/>Distance Matrix Metric Space</li>
 </lu>
-
+See the <a href="https://github.com/billDrett/K-Medoids-Clustering/blob/master/dataTypes.h">datatypes file</a> for the format of each metric space.
 
 <h2/>Compile</h2>
 Use make command to compile and make clean to delete object files(there is a MakeFile). 
