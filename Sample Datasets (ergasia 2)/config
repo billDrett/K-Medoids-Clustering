@@ -1,0 +1,4 @@
+number_of_clusters: 10
+number_of_hash_functions: 4
+number_of_hash_tables: 5
+clarans_iterations: 1
